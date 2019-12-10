@@ -1,0 +1,693 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  
+
+window.printTags_levant = function(e) {
+
+	gtag2('config', 'DC-4419685');
+	gtag2('config', 'AW-978718470');
+
+	function universalDBM() {
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'u3': _satellite.getVar('Page Name'),
+			'u4': '',
+			'send_to': 'DC-4419685/invmedia/aseri0+standard'
+		});
+	}
+
+	if (document.URL.indexOf("unpacked/thank-you") != -1 || document.URL.indexOf("/smartphones/galaxy-note10/buy") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-978718470/PuPuCKTmy6UBEIae2NID'});
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'u3': _satellite.getVar('Page Name'),
+			'u4': '',
+				'u5': '',
+			'send_to': 'DC-4419685/invmedia/s10-t00+standard'
+		});
+		universalDBM();
+	}
+
+	else if (document.URL.indexOf("unpacked") != -1 || document.URL.indexOf("/smartphones/galaxy-note10") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-978718470/qEDSCOeKxKUBEIae2NID'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("smartphones/galaxy-s10/buy/") != -1) {
+			gtag2('event', 'conversion', {'send_to': 'AW-978718470/bfsWCNL5wJMBEIae2NID'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("galaxy-a7") != -1) {
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-978718470/VCPXCPXnjI8BEIae2NID'
+		});
+		universalDBM();
+	} else if (document.URL.indexOf("galaxy-a9") != -1) {
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-978718470/0TUfCJfc944BEIae2NID'
+		});
+		universalDBM();
+	} else if (document.URL.indexOf("smartphones/galaxy-note9/buy/iraq") != -1) {
+		//LOCAL-B2C-AD(DBM+AW)-FP-GN9-IQ
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4419685/invmedia/pylu9htl+standard'
+		});
+	} else if (document.URL.indexOf("smartphones/galaxy-note9/buy/jordan") != -1) {
+		//LOCAL-B2C-AD(DBM+AW)-FP-GN9-JO
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-978718470/2JsuCMnR54UBEIae2NID'
+		});
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4419685/invmedia/gvdjztto+standard'
+		});
+	} else if (document.URL.indexOf("smartphones/galaxy-note9/buy/lebanon") != -1) {
+		//LOCAL-B2C-AD(DBM+AW)-FP-GN9-LB
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4419685/invmedia/yuyhxuhb+standard'
+		});
+	} else if (document.URL.indexOf("smartphones/galaxy-note9/buy/syria") != -1) {
+		//LOCAL-B2C-AD(DBM+AW)-FP-GN9-SY
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-978718470/8dk8COrr9oUBEIae2NID'
+		});
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4419685/invmedia/2lsbb8vy+standard'
+		});
+	}
+
+	else if (document.URL.indexOf("offer/mobile-trade-in/") != -1) {
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-978718470/0fJOCJagwpYBEIae2NID'
+		});
+		universalDBM();
+	}
+
+
+	else if (document.URL.indexOf("smartphones/galaxy-note9/") != -1 && document.URL.indexOf("smartphones/galaxy-note9/buy") === -1) {
+		//LOCAL-B2C-AD(DBM+AW)-MS-GN9
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-978718470/Ij_XCPyn54UBEIae2NID'
+		});
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4419685/invmedia/ujfwatzy+standard'
+		});
+	} else {
+		universalDBM();
+	}
+
+
+}
+window.printTags_levant_ar = function (e) {
+	printTags_levant(e);
+}
+window.printTags_eg = function (e) {
+
+	gtag2('config', 'DC-4598191');
+	gtag2('config', 'AW-957219451');
+
+	function gtag2(command, target, info = '') {
+		_satellite.notify("LOCAL gtag " + command + " " + target + " " + JSON.stringify(info));
+		gtag(command, target, info);
+	}
+
+	function universalDBM() {
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Page Name'),
+			'u2': _satellite.getVar('Product Display Name'),
+			'u3': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4598191/invmedia/aseri0+standard'
+		});
+	}
+
+	if (document.URL.indexOf("unpacked/thank-you") != -1 || document.URL.indexOf("/smartphones/galaxy-note10/buy") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-728929027/yudOCIqtw6UBEIOmytsC'});
+		universalDBM();
+	}
+
+	else if (location.pathname === '/eg/unpacked/' || document.URL.indexOf("/smartphones/galaxy-note10/") != -1) {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-728929027/qJxJCPmqw6UBEIOmytsC'});
+		universalDBM();
+	}
+
+	else if (location.pathname === '/eg/smartphones/galaxy-s10/') {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-957219451/AIryCOf78JUBEPuEuMgD'});
+		universalDBM();
+	}
+
+	else if (location.pathname === "/eg/smartphones/galaxy-s10/buy/" ) {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-957219451/hmMICLu06ZUBEPuEuMgD'});
+		universalDBM();
+	}
+
+	else if (document.URL.indexOf("galaxy-a7") != -1) {
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-957219451/Vm6HCLfw944BEPuEuMgD'
+		});
+		universalDBM();
+	} else if (document.URL.indexOf("galaxy-a9") != -1) {
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-957219451/opn-CJnw944BEPuEuMgD'
+		});
+		universalDBM();
+	}
+	//LOCAL-B2C-AD(DBM+AW)-FP-ALL-GN9
+	else if (document.URL.indexOf("smartphones/galaxy-note9/buy") != -1) {
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-957219451/c3aSCMCt94UBEPuEuMgD'
+		});
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4598191/invmedia/u54csi5i+standard'
+		});
+	}
+	//LOCAL-B2C-AD(DBM+AW)-MS-GN9
+	else if (document.URL.indexOf("smartphones/galaxy-note9/") != -1 && document.URL.indexOf("smartphones/galaxy-note9/buy") === -1) {
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-957219451/T6o9CJmt94UBEPuEuMgD'
+		});
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4598191/invmedia/3tzueuky+standard'
+		});
+	}
+	//LOCAL-B2C-AD(DBM+AW)-MS-GN9-TradeIn
+	else if (document.URL.indexOf("/offer/mobile-trade-in/") != -1) {
+		gtag2('event', 'conversion', {
+			'send_to': 'AW-761524388/cNzaCJiiwpYBEKThj-sC'
+		});
+		universalDBM();
+	}
+	else {
+		universalDBM();
+	}
+
+
+}
+window.printTags_n_africa = function (e) {
+
+	gtag2('config', 'DC-6963313');
+	gtag2('config', 'AW-851441102');
+	gtag2('config', 'AW-811784041'); // old Note9
+
+	function universalDBM() {
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+		    'u1': _satellite.getVar('Page Name'),
+		    'u2': _satellite.getVar('Product Display Name'),
+		    'u3': _satellite.getVar('getStdModelCode'),
+		    'send_to': 'DC-6963313/invmedia/49hnt5mx+standard'
+		});
+	}
+
+
+
+
+	if (location.pathname === '/n_africa/unpacked/thank-you/' || document.URL.indexOf("/smartphones/galaxy-note10/buy") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-728917319/BEYECLSnw6UBEMfKydsC'});
+		universalDBM();
+	}
+	else if (location.pathname === '/n_africa/unpacked/' || document.URL.indexOf("/smartphones/galaxy-note10") != -1 ) {
+  		gtag2('event', 'conversion', {'send_to': 'AW-728917319/kDJMCOShw6UBEMfKydsC'});
+			universalDBM();
+	}
+
+	else if (location.pathname === '/n_africa/smartphones/galaxy-s10/') {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-851441102/mM_fCNaI8ZUBEM7r_5UD'});
+		universalDBM();
+	}
+
+	else if (location.pathname === "/n_africa/smartphones/galaxy-s10/buy/" ) {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-851441102/PhbHCLnT3JUBEM7r_5UD'});
+		universalDBM();
+	}
+	else if (location.pathname === "/n_africa/smartphones/galaxy-a80-a805/SM-A805FZKAMWD/" ) {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-736068845/4l96CNjo06UBEO2J_t4C'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("galaxy-a7") != -1) {
+  		gtag2('event', 'conversion', {'send_to': 'AW-851441102/CebICKXxjI8BEM7r_5UD'});
+		universalDBM();
+	} else if (document.URL.indexOf("galaxy-a9") != -1) {
+  		gtag2('event', 'conversion', {'send_to': 'AW-851441102/9VY1CPDh944BEM7r_5UD'});
+		universalDBM();
+	} else if (document.URL.indexOf("smartphones/galaxy-note9/buy") != -1) {
+		  gtag2('event', 'conversion', {'send_to': 'AW-811784041/kakQCIni54UBEOmui4MD'});
+		  gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u1': _satellite.getVar('Page Name'),
+		    'u2': _satellite.getVar('Product Display Name'),
+		    'u3': _satellite.getVar('getStdModelCode'),
+		    'send_to': 'DC-6963313/invmedia/uckluhfc+standard'
+		  });
+	}
+	else if (document.URL.indexOf("smartphones/galaxy-note9/") != -1 && document.URL.indexOf("smartphones/galaxy-note9/buy") === -1) {
+		 gtag2('event', 'conversion', {'send_to': 'AW-811784041/wwdlCKvi9oUBEOmui4MD'});
+		 gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u1': _satellite.getVar('Page Name'),
+		    'u2': _satellite.getVar('Product Display Name'),
+		    'u3': _satellite.getVar('getStdModelCode'),
+		    'send_to': 'DC-6963313/invmedia/wbrfzy5x+standard'
+		  });
+	}
+
+	else if (document.URL.indexOf("/offer/mobile-trade-in/") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-851441102/-SAYCMjNtpYBEM7r_5UD'});
+		universalDBM();
+	} else {
+		universalDBM();
+	}
+
+}
+window.printTags_pk = function (e) {
+
+	gtag2('config', 'DC-8206982');
+	gtag2('config', 'AW-996002732');
+
+	function universalDBM() {
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'u3': _satellite.getVar('Page Name'),
+			'send_to': 'DC-8206982/invmedia/samsu0+standard'
+		});
+	}
+
+
+
+	if (location.pathname === '/pk/unpacked/thank-you/' || document.URL.indexOf("/smartphones/galaxy-note10/buy") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-996002732/19aOCPDK-KUBEKyX99oD'});
+		universalDBM();
+	}
+	else if (location.pathname === '/pk/unpacked/' || document.URL.indexOf("/smartphones/galaxy-note10") != -1) {
+  		gtag2('event', 'conversion', {'send_to': 'AW-996002732/F-wiCLPw9KUBEKyX99oD'});
+			universalDBM();
+	}
+	else if (document.URL.indexOf("smartphones/galaxy-s10/buy/") != -1) {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-996002732/NqVmCOrhxJMBEKyX99oD'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("galaxy-a7") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-996002732/TomcCI292IwBEKyX99oD'});
+		universalDBM();
+	} else if (document.URL.indexOf("galaxy-a9") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-996002732/DFaBCI_q8owBEKyX99oD'});
+		universalDBM();
+	} else if (document.URL.indexOf("smartphones/galaxy-note9/buy") != -1) {
+
+		gtag2('event', 'conversion', {'send_to': 'AW-996002732/xt7ECJjCjYYBEKyX99oD'});
+		gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u1': _satellite.getVar('Product Display Name'),
+		    'u2': _satellite.getVar('getStdModelCode'),
+		    'send_to': 'DC-8206982/invmedia/x6nn9e0i+standard'
+		  });
+
+	}
+	else if (document.URL.indexOf("smartphones/galaxy-note9/") != -1 && document.URL.indexOf("smartphones/galaxy-note9/buy") === -1) {
+
+		gtag2('event', 'conversion', {'send_to': 'AW-996002732/QVq1CIPM_oUBEKyX99oD'});
+		gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u1': _satellite.getVar('Product Display Name'),
+		    'u2': _satellite.getVar('getStdModelCode'),
+		    'send_to': 'DC-8206982/invmedia/rrrc785r+standard'
+		  });
+
+	} else if (document.URL.indexOf("/offer/mobile-trade-in/") != -1) {
+
+		gtag2('event', 'conversion', {'send_to': 'AW-996002732/o04ECMzS4JYBEKyX99oD'});
+		universalDBM();
+
+	} else {
+		universalDBM();
+	}
+
+
+}
+window.printTags_sa = function (e) {
+
+	gtag2('config', 'DC-4368557');
+	gtag2('config', 'AW-851441654');
+
+	function universalDBM() {
+		gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u1': _satellite.getVar('Product Display Name'),
+		    'u2': _satellite.getVar('getStdModelCode'),
+		    'u3': _satellite.getVar('Page Name'),
+		    //'send_to': 'DC-4368557/invmedia/iag04izq+standard'
+		    'send_to': 'DC-4368557/invmedia/allpa0+standard'
+		});
+	}
+
+	if (location.pathname === '/sa/unpacked/thank-you/' || location.pathname === '/sa_en/unpacked/thank-you/' || document.URL.indexOf("/smartphones/galaxy-note10/buy") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-851441654/pR7uCKTr5KUBEPbv_5UD'});
+		universalDBM();
+	}
+	else if (location.pathname === '/sa/unpacked/' || location.pathname === '/sa_en/unpacked/' || document.URL.indexOf("/smartphones/galaxy-note10") != -1 ) {
+  		gtag2('event', 'conversion', {'send_to': 'AW-851441654/33G4CK2t7KUBEPbv_5UD'});
+			universalDBM();
+	}
+
+	else if (document.URL.indexOf("galaxy-a20-a205") != -1) {
+			gtag2('event', 'conversion', {'send_to': 'AW-851441654/gtn9CIS5s50BEPbv_5UD'});
+			universalDBM();
+	}
+
+	else if (document.URL.indexOf("galaxy-a70-a705") != -1) {
+			gtag2('event', 'conversion', {'send_to': 'AW-851441654/kI50CLaNqJ0BEPbv_5UD'});
+			universalDBM();
+	}
+	else if (document.URL.indexOf("galaxy-a80-a805") != -1) {
+			gtag2('event', 'conversion', {'send_to': 'AW-851441654/JFizCMTitKYBEPbv_5UD'});
+			universalDBM();
+	}
+
+
+	else if (location.pathname === '/sa/smartphones/galaxy-s10/' || location.pathname === '/sa_en/smartphones/galaxy-s10/') {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-851441654/ghgnCKev3JUBEPbv_5UD'});
+		universalDBM();
+	}
+	else if (location.pathname === "/sa/smartphones/galaxy-s10/buy/" || location.pathname === '/sa_en/smartphones/galaxy-s10/buy/') {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-851441654/tpUlCJex3JUBEPbv_5UD'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("galaxy-a7") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-851441654/yiHJCLa1_Y0BEPbv_5UD'});
+		universalDBM();
+	}
+
+	else if (document.URL.indexOf("/smartphones/galaxy-a30-a305/SM-A305FZKFKSA/") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-851441654/Ogd3CPuZr5gBEPbv_5UD'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("/smartphones/galaxy-a50-a505/SM-A505FZKCKSA/") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-851441654/B_u5CIqar5gBEPbv_5UD'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("/smartphones/galaxy-a-series/") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-851441654/SSJdCNTCuJgBEPbv_5UD'});
+		universalDBM();
+	}
+
+	else if (document.URL.indexOf("galaxy-a9") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-851441654/ksXZCKSW9Y0BEPbv_5UD'});
+		universalDBM();
+	} else if (document.URL.indexOf("smartphones/galaxy-note9/buy") != -1) {
+
+		gtag2('event', 'conversion', {'send_to': 'AW-851441654/81zdCJ-66IUBEPbv_5UD'});
+		gtag2('event', 'conversion', {
+			'allow_custom_scripts': true,
+			'u1': _satellite.getVar('Product Display Name'),
+			'u2': _satellite.getVar('getStdModelCode'),
+			'send_to': 'DC-4368557/invmedia/ln6rernx+standard'
+		});
+
+	} else if (document.URL.indexOf("smartphones/galaxy-note9/") != -1 && document.URL.indexOf("smartphones/galaxy-note9/buy") === -1) {
+
+		gtag2('event', 'conversion', {'send_to': 'AW-851441654/U0oqCJuygYYBEPbv_5UD'});
+		gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u1': _satellite.getVar('Product Display Name'),
+		    'u2': _satellite.getVar('getStdModelCode'),
+		    'send_to': 'DC-4368557/invmedia/0bdpjfru+standard'
+		});
+
+	} else if (document.URL.indexOf("/offer/mobile-trade-in/") != -1) {
+
+		gtag2('event', 'conversion', {'send_to': 'AW-765541797/RpLPCL7JtpYBEKX7hO0C'});
+		universalDBM();
+
+	} else {
+		universalDBM();
+	}
+
+
+}
+window.printTags_sa_en = function (e) {
+	printTags_sa(e);
+}
+window.printTags_il = function (e) {
+
+	//All pages
+	gtag2('config', 'AW-872680711');
+	gtag2('event', 'page_view', {
+		'send_to': 'AW-872680711',
+		'user_id': s.eVar63
+	});
+
+	if (window.location.pathname === "/il/unpacked/") {
+			gtag2('config', 'AW-874635981');
+	} else if (window.location.pathname === "/il/unpacked/thank-you/") {
+			gtag2('config', 'AW-874635981');
+			gtag2('event', 'conversion', {
+				'send_to': 'AW-874635981/fHJdCNj6lZQBEM3Fh6ED'
+		});
+	}
+
+	if (document.URL.indexOf("/il/smartphones/galaxy-note10/") != -1) {
+		if (location.pathname !== '/il/smartphones/galaxy-note10/'){
+			gtag2('event', 'conversion', {
+					'send_to': 'AW-874635981/G9z1CJv-8qUBEM3Fh6ED'
+			});
+		}
+	}
+
+}
+window.printTags_tr = function (e) {
+
+	gtag2('config', 'DC-8865976');
+	gtag2('config', 'AW-1033933301');
+	gtag2('config', 'UA-96441384-1');
+
+	function universalDBM() {
+		gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u13': _satellite.getVar('Product Display Name'),
+		    'u14': _satellite.getVar('getStdModelCode'),
+		    'u4': _satellite.getVar('Page Name'),
+		    'send_to': 'DC-8865976/samsu0/samsun00+standard'
+		});
+	}
+
+
+	if (location.pathname === '/tr/unpacked/thank-you/' || document.URL.indexOf("/smartphones/galaxy-note10/buy") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-1033933301/2cgoCKDi7qUBEPWjgu0D'});
+		universalDBM();
+	}
+	else if (location.pathname === '/tr/unpacked/' || document.URL.indexOf("/smartphones/galaxy-note10") != -1 ) {
+  		gtag2('event', 'conversion', {'send_to': 'AW-1033933301/C19GCI3e7qUBEPWjgu0D'});
+			universalDBM();
+	}
+
+	else if (document.URL.indexOf("smartphones/galaxy-s10/buy/") != -1) {
+	  	gtag2('event', 'conversion', {'send_to': 'AW-1033933301/VzHUCL65qJMBEPWjgu0D'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("galaxy-a7") != -1) {
+		gtag2('event', 'conversion', {'send_to': 'AW-1033933301/c4H9COj-8owBEPWjgu0D'});
+		universalDBM();
+	} else if (document.URL.indexOf("galaxy-a9") != -1) {
+  		gtag2('event', 'conversion', {'send_to': 'AW-1033933301/sFw7CMiE64wBEPWjgu0D'});
+		universalDBM();
+	}
+	else if (document.URL.indexOf("smartphones/galaxy-note9/") != -1 && document.URL.indexOf("smartphones/galaxy-note9/buy") === -1) {
+
+		gtag2('config', 'DC-4228598');
+  		gtag2('config', 'DC-4436278');
+		gtag2('event', 'conversion', {'send_to': 'AW-1033933301/_AQRCObRl4YBEPWjgu0D'})
+		gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u11': _satellite.getVar('getStdModelCode'),
+		    'u12': _satellite.getVar('Product Display Name'),
+		    'send_to': 'DC-4228598/invmedia/9eoexeol+standard'
+		});
+		gtag2('event', 'conversion', {
+		    'allow_custom_scripts': true,
+		    'u19': _satellite.getVar('getStdModelCode'),
+		    'u20': _satellite.getVar('Product Display Name'),
+		    'u21': _satellite.getVar('Page Name'),
+		    'send_to': 'DC-4436278/note90/1807_001+standard'
+		  });
+
+	} else if (document.URL.indexOf("/offer/mobile-trade-in/") != -1) {
+
+		gtag2('event', 'conversion', {'send_to': 'AW-1033933301/F4OiCNzl3ooBEPWjgu0D'});
+		universalDBM();
+
+	} else {
+		universalDBM();
+	}
+
+
+}
+window.printTags_content = function (e) {
+//AEM case
+window['printTags_'+document.URL.split("/")[5]]($(this));
+}
+
+
+function getStdModelCode() {
+
+	switch (true) {
+
+    // STD PDP, MKT PDP, buy offline, STD index
+
+
+    case (document.URL.indexOf('/offer/mobile-trade-in/') !== -1 ):
+        return 'S10';
+        break;
+
+    case (document.URL.indexOf('/smartphones/galaxy-s10/buy') !== -1 ):
+        return 'S10';
+        break;
+
+    case (document.URL.indexOf('offer/trade-up-to-galaxy-a7') !== -1 ):
+        return 'A7';
+        break;
+
+    case (document.URL.indexOf("smart")!=-1 && document.URL.indexOf("pack")!=-1):
+        return 'smart-pack';
+        break;
+
+    case (digitalData.product.model_name !== ''):
+    	return getShortModelCode(digitalData.product.model_name);
+        break;
+
+    default:
+    	getStdName(document.URL);
+    break;
+
+	}
+
+}
+function getStdName(str) {
+
+	if (str.includes('note') && str.includes('10')) return 'N10';
+	if (str.includes('note') && str.includes('9')) return 'N9';
+	if (str.includes('note') && str.includes('8')) return 'N8';
+	if (str.includes('note') && str.includes('7')) return 'N7';
+	if (str.includes('note') && str.includes('6')) return 'N6';
+	if (str.includes('note') && str.includes('5')) return 'N5';
+	if (str.includes('note') && str.includes('4')) return 'N4';
+	if (str.includes('note') && str.includes('3')) return 'N3';
+	if (str.includes('note') && str.includes('2')) return 'N2';
+
+
+	if (str.includes('galaxy') && str.includes('s10')) return 'S10';
+	if (str.includes('galaxy') && str.includes('s9')) return 'S9';
+	if (str.includes('galaxy') && str.includes('s8')) return 'S8';
+	if (str.includes('galaxy') && str.includes('s7')) return 'S7';
+	if (str.includes('galaxy') && str.includes('s6')) return 'S6';
+	if (str.includes('galaxy') && str.includes('s5')) return 'S5';
+	if (str.includes('galaxy') && str.includes('s4')) return 'S4';
+	if (str.includes('galaxy') && str.includes('s3')) return 'S3';
+	if (str.includes('galaxy') && str.includes('s2')) return 'S2';
+
+
+	if (str.includes('galaxy') && str.includes('j9')) return 'J9';
+	if (str.includes('galaxy') && str.includes('j8')) return 'J8';
+	if (str.includes('galaxy') && str.includes('j7')) return 'J7';
+	if (str.includes('galaxy') && str.includes('j6')) return 'J6';
+	if (str.includes('galaxy') && str.includes('j5')) return 'J5';
+	if (str.includes('galaxy') && str.includes('j4')) return 'J4';
+	if (str.includes('galaxy') && str.includes('j3')) return 'J3';
+	if (str.includes('galaxy') && str.includes('j2')) return 'J2';
+	if (str.includes('galaxy') && str.includes('j1')) return 'J1';
+
+
+	if (str.includes('galaxy') && str.includes('a90')) return 'A90';
+	if (str.includes('galaxy') && str.includes('a80')) return 'A80';
+	if (str.includes('galaxy') && str.includes('a70')) return 'A70';
+	if (str.includes('galaxy') && str.includes('a60')) return 'A60';
+	if (str.includes('galaxy') && str.includes('a50')) return 'A50';
+	if (str.includes('galaxy') && str.includes('a40')) return 'A40';
+	if (str.includes('galaxy') && str.includes('a30')) return 'A30';
+	if (str.includes('galaxy') && str.includes('a20')) return 'A20';
+	if (str.includes('galaxy') && str.includes('a10')) return 'A10';
+
+	if (str.includes('galaxy') && str.includes('a9')) return 'A9';
+	if (str.includes('galaxy') && str.includes('a8')) return 'A8';
+	if (str.includes('galaxy') && str.includes('a7')) return 'A7';
+	if (str.includes('galaxy') && str.includes('a6')) return 'A6';
+	if (str.includes('galaxy') && str.includes('a5')) return 'A5';
+	if (str.includes('galaxy') && str.includes('a4')) return 'A4';
+	if (str.includes('galaxy') && str.includes('a3')) return 'A3';
+	if (str.includes('galaxy') && str.includes('a2')) return 'A2';
+	if (str.includes('galaxy') && str.includes('a1')) return 'A1';
+
+
+}
+
+function getShortModelCode(str){
+	var letter = str.slice(3, 4);
+	var digit_1 = str.slice(4, 5);
+	var digit_2 = str.slice(5, 6);
+	var digit_1_2 = str.slice(4, 6);
+	var digits = (digit_2 === '0') ? digit_1_2 : digit_1;
+	return letter+digits;
+}
+_satellite.setVar('getStdModelCode', getStdModelCode());
+
+function gtag() { dataLayer.push(arguments);}
+function gtag2(command, target, info = '') {
+	_satellite.notify("LOCAL gtag " + command + " " + target + " " + JSON.stringify(info));
+	gtag(command, target, info);
+}
+
+
+var dcJS = document.createElement("SCRIPT");
+var done = false;
+dcJS.setAttribute("src", "//www.googletagmanager.com/gtag/js");
+dcJS.setAttribute("type", "text/javascript");
+document.body.appendChild(dcJS);
+dcJS.onload = dcJS.onreadystatechange = function() {
+  if (
+    !done &&
+    (!this.readyState ||
+      this.readyState === "loaded" ||
+      this.readyState === "complete")
+  ) {
+    done = true;
+    callback();
+
+    // Handle memory leak in IE
+    dcJS.onload = dcJS.onreadystatechange = null;
+    document.body.removeChild(dcJS);
+  }
+};
+function callback() {
+  	if (done) {
+		window.dataLayer = window.dataLayer || [];
+		gtag('js', new Date());
+		window['printTags_'+document.URL.split("/")[3]](this);
+
+	}
+
+}
+
+});
